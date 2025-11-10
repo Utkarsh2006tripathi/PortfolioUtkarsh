@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Me - Utkarsh Tripathi</title>
+  <link rel="stylesheet" href="./Css/bootstrap.css" />
+  <link rel="stylesheet" href="./Css/style.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body style="background-color: rgb(37, 50, 88);">
+  <div class="container py-5">
+    <h2 class="text-center text-light mb-4">Hire <span style="color:#b347ff;">Me</span></h2>
+    <p class="text-center text-light mb-5">
+      Fill out this form and I’ll get back to you as soon as possible.
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="hireForm">
+          <div class="mb-3">
+            <label class="form-label text-light">Name</label>
+            <input type="text" class="form-control" name="from_name" placeholder="Enter your name" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Email</label>
+            <input type="email" class="form-control" name="reply_to" placeholder="Enter your email" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Message</label>
+            <textarea class="form-control" name="message" rows="4" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary rounded-5 w-100">Send Request</button>
+        </form>
+
+        <div id="msg" class="text-light mt-3 text-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY"); // ✅ Replace this with your EmailJS Public Key
+    })();
+
+    document.getElementById("hireForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+        .then(() => {
+          document.getElementById("msg").innerText = "✅ Your message has been sent successfully!";
+          document.getElementById("hireForm").reset();
+        })
+        .catch((error) => {
+          document.getElementById("msg").innerText = "❌ Failed to send message. Try again later.";
+          console.error("EmailJS Error:", error);
+        });
+    });
+  </script>
+</body>
+</html>

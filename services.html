@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Services | Utkarsh Tripathi</title>
+  <link rel="icon" type="image/png" href="./images/port.png">
+  <link rel="stylesheet" href="./Css/bootstrap.css">
+  <link rel="stylesheet" href="./Css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: rgb(37, 50, 88);
+      color: white;
+      font-family: Cambria, serif;
+    }
+    .services-section {
+      padding: 70px 0;
+    }
+    .services-title {
+      font-size: 42px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services-title span {
+      color: #b347ff;
+    }
+    .service-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: none;
+      border-radius: 20px;
+      padding: 25px;
+      transition: 0.4s;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(246, 243, 249, 0.5);
+    }
+    .service-icon {
+      font-size: 50px;
+      color: #b347ff;
+      margin-bottom: 20px;
+    }
+    .service-card h4 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .service-card p {
+      font-size: 17px;
+      text-align: justify;
+      color: #ddd;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #b347ff;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background-color: #7d29cc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg nav1">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5 fs-3 text-light" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav  gap-5 fs-4 nav2">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#projects">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#contact">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nvabar end  -->
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="services-title">My <span>Services</span></h2>
+      <p class="text-center mb-5" style="font-size: 19px;">
+        I provide a range of web development services designed to help you build a strong online presence.  
+        From concept to deployment — I ensure every project is efficient, responsive, and user-friendly.
+      </p>
+
+      <div class="row text-center g-4">
+        <!-- Web Development -->
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h4>Web Development</h4>
+            <p>I design and develop responsive, interactive websites using HTML, CSS, JavaScript, and modern frameworks like Bootstrap. I focus on creating clean, optimized code and intuitive layouts for every project.</p>
+          </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-palette"></i></div>
+            <h4>UI/UX Design</h4>
+            <p>I create visually appealing, user-friendly designs that enhance the browsing experience. From wireframes to final prototypes, I ensure the design aligns with the user’s needs and brand identity.</p>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h4>Backend Development</h4>
+            <p>I build secure and scalable backend systems using PHP and Laravel. My focus is on creating robust APIs, database management, and ensuring smooth communication between the front-end and server.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Services -->
+      <div class="row text-center g-4 mt-4">
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Responsive Design</h4>
+            <p>Your website will look great on all devices — desktops, tablets, and mobile phones — ensuring accessibility and a seamless user experience everywhere.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-bug"></i></div>
+            <h4>Debugging & Maintenance</h4>
+            <p>I provide regular updates, performance improvements, and debugging services to ensure your website runs smoothly and efficiently after deployment.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-database"></i></div>
+            <h4>Database Management</h4>
+            <p>I handle database design, optimization, and integration, ensuring your data is organized, secure, and efficiently managed for better performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

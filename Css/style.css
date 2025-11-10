@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(37, 50, 88);
+}
+.nav1{
+    background-color: rgb(56, 22, 87);
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.nav2{
+    margin-left: 523px;
+    
+}
+.imgb{
+    height: 430px;
+    width: 430px;
+    border: 15px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 130px 30px rgba(255, 255, 255, 0.8);
+}
+.image{
+    
+    border-radius: 50%;
+    margin-top: -2px;
+    
+}
+.imgb2{
+    margin-left: 150px;
+}
+.cardb{
+    background-color: rgb(56, 22, 87);
+}
+.cds:hover{
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+}
+
+
+/* for refresh */
+.title .name {
+  color: #9b4dff;
+  border-right: 3px solid #9b4dff;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+/* end */
+
+
+.logo{
+    height: 200px;
+    width: 300px;
+    /* border-radius: 50%; */
+}

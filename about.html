@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Utkarsh Tripathi</title>
+  <link rel="icon" type="image/png" href="./images/port.png" />
+  <link rel="stylesheet" href="./Css/bootstrap.css" />
+  <link rel="stylesheet" href="./Css/style.css" />
+  <style>
+    body {
+      background-color: rgb(37, 50, 88);
+      color: white;
+      font-family: Cambria, serif;
+    }
+    .about-section {
+      padding: 70px 0;
+    }
+    .about-title {
+      font-size: 42px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .about-title span {
+      color: #b347ff;
+    }
+    .about-content {
+      text-align: justify;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+    .imgb {
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(179, 71, 255, 0.4);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #b347ff;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background-color: #7d29cc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg nav1">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5 fs-3 text-light" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav  gap-5 fs-4 nav2">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#projects">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#contact">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- About Me Section -->
+  <section class="about-section">
+    <div class="container">
+      <h2 class="about-title">More <span>About Me</span></h2>
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="./images/Screenshot 2025-10-30 230405.png" class="img-fluid imgb" alt="Utkarsh Tripathi" />
+        </div>
+        <div class="col-md-7">
+          <div class="about-content">
+            <p>Hello! I'm <b>Utkarsh Tripathi</b>, currently pursuing my apprenticeship in <b>Information Technology</b>. I’m an enthusiastic learner and aspiring <b>Full Stack Developer</b> who loves turning ideas into reality through code.</p>
+
+            <p>My journey in technology started with curiosity — I began experimenting with <b>HTML, CSS, and JavaScript</b>, and soon expanded into backend technologies like <b>PHP and Laravel</b>. I also have a strong foundation in <b>C programming</b> and <b>Data Structures & Algorithms</b>, which help me write clean, efficient, and logical code.</p>
+
+            <p>Over time, I’ve worked on multiple small projects, from creating personal portfolios to designing responsive web pages and learning API integrations. My goal is to become a well-rounded <b>Full Stack Developer</b> who can handle both client-side design and server-side logic efficiently.</p>
+
+            <p>I’m deeply interested in continuous learning — exploring frameworks like <b>React</b>, improving problem-solving through coding challenges, and staying updated with the latest web development trends.</p>
+
+            <p>When I’m not coding, you’ll find me exploring UI/UX concepts, learning new tools, or helping others understand core programming concepts.</p>
+
+            <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Highlight -->
+  <section class="my-5">
+    <div class="container text-center">
+      <h3 class="text-light mb-4">Technical <span style="color:#b347ff;">Expertise</span></h3>
+      <div class="row">
+        <div class="col-md-3 mb-3"><div class="p-3 rounded-4" style="background-color:rgba(255,255,255,0.05)">HTML / CSS</div></div>
+        <div class="col-md-3 mb-3"><div class="p-3 rounded-4" style="background-color:rgba(255,255,255,0.05)">JavaScript / Bootstrap</div></div>
+        <div class="col-md-3 mb-3"><div class="p-3 rounded-4" style="background-color:rgba(255,255,255,0.05)">PHP / Laravel</div></div>
+        <div class="col-md-3 mb-3"><div class="p-3 rounded-4" style="background-color:rgba(255,255,255,0.05)">C / DSA</div></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
